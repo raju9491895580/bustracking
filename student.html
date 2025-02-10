@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Bus Tracking</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script defer src="student.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Student Bus Tracking</h1>
+        <button id="logoutBtn">Logout</button>
+    </header>
+    
+    <div id="map"></div>
+    
+    <script>
+        document.getElementById("logoutBtn").addEventListener("click", function() {
+            localStorage.removeItem("studentID");
+            window.location.href = "login.html";
+        });
+    </script>
+</body>
+</html>
