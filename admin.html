@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel - Bus Tracking</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="admin.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Admin Panel</h1>
+        <button id="logout">Logout</button>
+    </header>
+    <main>
+        <section id="bus-tracking">
+            <h2>Live Bus Tracking</h2>
+            <div id="map"></div>
+        </section>
+        <section id="manage-users">
+            <h2>Manage Users</h2>
+            <h3>Drivers</h3>
+            <input type="text" id="driverName" placeholder="Driver Name">
+            <input type="text" id="driverUsername" placeholder="Username">
+            <input type="password" id="driverPassword" placeholder="Password">
+            <button id="addDriver">Add Driver</button>
+            <ul id="driverList"></ul>
+            
+            <h3>Students</h3>
+            <input type="text" id="studentID" placeholder="Student ID">
+            <button id="addStudent">Add Student</button>
+            <ul id="studentList"></ul>
+        </section>
+        <section id="change-admin-password">
+            <h2>Change Admin Password</h2>
+            <input type="password" id="oldPassword" placeholder="Old Password">
+            <input type="password" id="newPassword" placeholder="New Password">
+            <button id="changePassword">Change Password</button>
+        </section>
+    </main>
+</body>
+</html>
